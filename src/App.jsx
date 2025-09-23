@@ -40,26 +40,39 @@ function App() {
     alert("Thank you for contacting me! I will get back to you soon.");
     e.target.reset();
   };
+   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <div>
       <div className="watercolor-bg"></div>
       <header>
-        <div className="nav-container">
-          <span className="logo">Shambhu.dev</span>
-          <nav>
-            <a href="#hero">Home</a>
-            <a href="#projects">Projects</a>
-            <a href="#achievements">Achievements</a>
-            <a href="#about">About</a>
-            <a href="#resume">Resume</a>
-            
-            
-            <a href="#extra">Extra</a>
-            <a href="#contact">Contact</a>
-          </nav>
-        </div>
-      </header>
+  <div className="nav-container">
+    <span className="logo">Shambhu.dev</span>
+    
+    {/* Hamburger button */}
+    <button 
+      className="hamburger-btn" 
+      onClick={() => setIsMenuOpen(!isMenuOpen)}
+      aria-label="Toggle Menu"
+    >
+      <span className={`bar ${isMenuOpen ? 'open' : ''}`}></span>
+      <span className={`bar ${isMenuOpen ? 'open' : ''}`}></span>
+      <span className={`bar ${isMenuOpen ? 'open' : ''}`}></span>
+    </button>
+
+    {/* Navigation Links */}
+    <nav className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
+      <a href="#hero" onClick={() => setIsMenuOpen(false)}>Home</a>
+      <a href="#projects" onClick={() => setIsMenuOpen(false)}>Projects</a>
+      <a href="#achievements" onClick={() => setIsMenuOpen(false)}>Achievements</a>
+      <a href="#about" onClick={() => setIsMenuOpen(false)}>About</a>
+      <a href="#resume" onClick={() => setIsMenuOpen(false)}>Resume</a>
+      <a href="#extra" onClick={() => setIsMenuOpen(false)}>Extra</a>
+      <a href="#contact" onClick={() => setIsMenuOpen(false)}>Contact</a>
+    </nav>
+  </div>
+</header>
+
       <main>
         {/* HERO */}
         <section className="main-hero" id="hero">
