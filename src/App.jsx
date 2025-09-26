@@ -50,26 +50,26 @@ function App() {
     <span className="logo">Shambhu.dev</span>
     
     {/* Hamburger button */}
-    <button 
-      className="hamburger-btn" 
-      onClick={() => setIsMenuOpen(!isMenuOpen)}
-      aria-label="Toggle Menu"
-    >
-      <span className={`bar ${isMenuOpen ? 'open' : ''}`}></span>
-      <span className={`bar ${isMenuOpen ? 'open' : ''}`}></span>
-      <span className={`bar ${isMenuOpen ? 'open' : ''}`}></span>
-    </button>
+     <button
+          className={`hamburger-btn${isMenuOpen ? " open" : ""}`}
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label="Toggle Menu"
+        >
+          <span className={`bar${isMenuOpen ? " open" : ""}`}></span>
+          <span className={`bar${isMenuOpen ? " open" : ""}`}></span>
+          <span className={`bar${isMenuOpen ? " open" : ""}`}></span>
+        </button>
 
-    {/* Navigation Links */}
-    <nav className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
-      <a href="#hero" onClick={() => setIsMenuOpen(false)}>Home</a>
-      <a href="#projects" onClick={() => setIsMenuOpen(false)}>Projects</a>
-      <a href="#achievements" onClick={() => setIsMenuOpen(false)}>Achievements</a>
-      <a href="#about" onClick={() => setIsMenuOpen(false)}>About</a>
-      <a href="#resume" onClick={() => setIsMenuOpen(false)}>Resume</a>
-      <a href="#extra" onClick={() => setIsMenuOpen(false)}>Extra</a>
-      <a href="#contact" onClick={() => setIsMenuOpen(false)}>Contact</a>
-    </nav>
+        {/* Navigation Links */}
+        <nav className={`nav-links${isMenuOpen ? " active" : ""}`}>
+          <a href="#hero" onClick={() => setIsMenuOpen(false)}>Home</a>
+          <a href="#projects" onClick={() => setIsMenuOpen(false)}>Projects</a>
+          <a href="#achievements" onClick={() => setIsMenuOpen(false)}>Achievements</a>
+          <a href="#about" onClick={() => setIsMenuOpen(false)}>About</a>
+          <a href="#resume" onClick={() => setIsMenuOpen(false)}>Resume</a>
+          <a href="#extra" onClick={() => setIsMenuOpen(false)}>Extra</a>
+          <a href="#contact" onClick={() => setIsMenuOpen(false)}>Contact</a>
+        </nav>
   </div>
 </header>
 

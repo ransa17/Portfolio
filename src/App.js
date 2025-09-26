@@ -1,6 +1,15 @@
 // App.js - for project data and other 
 
 export const projects = [
+  
+  {
+    title: "Trade-XI Platform",
+    img: "/tradeXi.png",
+    desc: "Trade-XI is a trading management app that helps users track, analyze, and improve their trading performance. Its all-in-one platform includes an advanced dashboard, analytics, trade journal, strategy builder, and tools for reporting, rules, and mistakes, all designed to foster discipline and continuous growth, aiming to enhance  performance and achieve consistent success.",
+    link: "https://trade-xi-lime.vercel.app/"
+},
+
+  
   {
     title: "Katihar Engineering College AI Club",
     img: "/ai-club.png",
