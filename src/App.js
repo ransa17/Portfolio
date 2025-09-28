@@ -1,7 +1,13 @@
 // App.js - for project data and other 
 
 export const projects = [
-  
+   {
+    title: "Crop Optimize Platform",
+    img: "/cropp.png",
+    desc: "Crop Optimize is an intelligent agriculture management platform designed to help farmers and agronomists maximize crop yields and resource efficiency. The platform features a unified dashboard, real-time analytics, planning tools, crop journals, and smart recommendations for irrigation, fertilization, and pest management. Its goal is to empower users with actionable insights, promote sustainable practices, and ensure consistent agricultural success.",
+    link: "https://crop-optimize.vercel.app/"
+},
+
   {
     title: "Trade-XI Platform",
     img: "/tradeXi.png",
