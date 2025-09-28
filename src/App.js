@@ -4,7 +4,7 @@ export const projects = [
    {
     title: "Crop Optimize Platform",
     img: "/cropp.png",
-    desc: "Crop Optimize is a smart agriculture platform that helps farmers boost yields and efficiency. It offers a unified dashboard, analytics, planning tools, and recommendations for irrigation, fertilization, and pest management to support sustainable and successful farming.
+    desc: "Crop Optimize is a smart agriculture platform that helps farmers boost yields and efficiency. It offers a unified dashboard, analytics, planning tools, and recommendations for irrigation, fertilization, and pest management to support sustainable and successful farming.",
    link: "https://crop-optimize.vercel.app/"
 },
 
